@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./IMG/FONDOBIENVENIDA.jpg">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/Style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/scrollreveal.js"></script>
     <title>Sorpresa</title>
 </head>
@@ -15,7 +17,7 @@
 <!--Header, parte del menu-->
     <header class="secciontop">
         <!--Contenedor-->
-        <nav class="nav container">
+        <nav class="nav container" data-aos="fade-right" data-aos-delay = "100" data-aos-duration = "2000">
             <div class="nav__logo">
                 <h2 class="nav__title">J.J</h2>
             </div>
@@ -25,13 +27,13 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca de</a>
+                    <a href="#" class="nav__links">Preguntas</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#" class="nav__links">Felicitaciones</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
+                    <a href="#" class="nav__links">Seccion especial</a>
                 </li>
                 <img src="./images/close.svg" class="nav__close">
             </ul>
@@ -44,8 +46,8 @@
         <section class="secciontop__container container">
             <!--Titulo SEEE-->
             <div class="palabrasBienvenid">
-                    <h1 class="secciontop__title">FELIZ CUMPLEAÑOS NIÑA</h1>
-                <p class="secciontop__paragraph">Feliz cumpleaños mi niña, mi cerebrito de ardilla, te quiero mucho
+                    <h1 class="secciontop__title" data-aos="fade-down-left" data-aos-delay = "200" data-aos-duration = "1000" >FELIZ CUMPLEAÑOS NIÑA</h1>
+                <p class="secciontop__paragraph" data-aos="fade-up-right" data-aos-delay = "200" data-aos-duration = "1000">Feliz cumpleaños mi niña, mi cerebrito de ardilla, te quiero mucho
                     espero te guste este detalle, lo hice con mucho cariño y dedicacion, disfruta cada seccion
                 </p>
             </div>
@@ -53,37 +55,54 @@
     </header>
 <!--FIN DEL HEADER-->
     <main>
-        <!--Preguntas de por que es especial-->
+        <!--Preguntas de por que es especial fade-down-->
         <section class="container about">
-            <h2 class="subtitle">RAZONES POR LAS QUE ERES ESPECIAL PARA MI Y MUCHAS PERSONAS MAS</h2>
-            <p class="about__paragraph">Muchas personas dicen que hay personas especiales, y baya que si lo son, por eso tu me encantas</p>
+            <h2 class="subtitle" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "1000">RAZONES POR LAS QUE ERES ESPECIAL PARA MI Y MUCHAS PERSONAS MAS</h2>
+            <p class="about__paragraph" data-aos="fade-down" data-aos-delay = "200" data-aos-duration = "1000">Muchas personas dicen que hay personas es
+                peciales, y baya que si lo son, por eso tu me encantas</p>
                 <!--EXCELENTE AMIGA-->
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="./images/shapes.svg" class="about__icon">
-                    <h3 class="about__title">ERES UNA EXCELENTE AMIGA</h3>
-                    <p class="about__paragrah">QUE PUEDO DECIR DE MI PARTE? Si todo de ti me encanta, es por ellos que 
-                        aja, quisiera que fueses mas que una amiga pero no, no se puede, o mejor dicho tiens miedo
+                    <img src="./ASSET/corazonsolito.svg" class="about__icon"  data-aos="flip-left" data-aos-delay = "200" data-aos-duration = "900">
+                    <h3 class="about__title" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">ERES UNA EXCELENTE AMIGA</h3>
+                    <p class="about__paragrah" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">QUE PUEDO DECIR D MI PARTE?kdksndknsdnsd
+                        skdjsd
                     </p>
                 </article>
                 <!--TU ESFUERZO-->
                 <article class="about__icons">
-                    <img src="./images/paint.svg" class="about__icon">
-                    <h3 class="about__title">TE ESFUERZAS MAS CADA DIA</h3>
-                    <p class="about__paragrah">Y ademas de ello eres mi ardillita</p>
+                    <img src="./ASSET/meta.svg" class="about__icon" data-aos="flip-left" data-aos-delay = "200" data-aos-duration = "900">
+                    <h3 class="about__title" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">TE ESFUERZAS MAS CADA DIA</h3>
+                    <p class="about__paragrah" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">Y ademas de ello eres mi ardillita</p>
                 </article>
                 <!--Solidaria-->
                 <article class="about__icons">
-                    <img src="./images/code.svg" class="about__icon">
-                    <h3 class="about__title">NO NECESITAMOS PEDIRTE AYUDA SIEMPRES ESTAS DISPUESTA A AYUDAR</h3>
-                    <p class="about__paragrah">Te amo es la parte en la que aja</p>
+                    <img src="./ASSET/heart.svg" class="about__icon" data-aos="flip-left" data-aos-delay = "200" data-aos-duration = "900">
+                    <h3 class="about__title" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">NO NECESITAMOS PEDIRTE AYUDA SIEMPRES ESTAS DISPUESTA A AYUDAR</h3>
+                    <p class="about__paragrah" data-aos="fade-up" data-aos-delay = "200" data-aos-duration = "900">Te amo es la parte en la que aja</p>
                 </article>
             </div>
+        </section>
+        <!--Seccion de frases con Imaganes Izquierda-derecha----------->
+        <section id = "Caja-Compartida">
+            <div class = "left_section" data-aos="fade-right" data-aos-delay = "200" data-aos-duration = "1000">
+                <h1> <span class = "TE-AMO">TE AMO</span> MI NIÑA PRECIOSA</h1>
+                <img src="" alt="">
+                <p>Te amo por que eres unica, te amo porque en ti encuentro lo que mas quiero.
+                    y aja bueno ahorita estamos asi sufriendo y aja no me gusta
+                </p>
+            </div>
+            <div class = "right-section" data-aos="fade-left" data-aos-delay = "200" data-aos-duration = "1000">
+            </div>  
         </section>
         <div>HOLA</div>
     </main>
     <footer class="footer">
     </footer>
-    <script src="js/efectosE.js"></script>
+    <!-- <script src="js/efectosE.js"></script> -->
+    <script>
+        AOS.init();
+        //data-aos = "nombredelefecto" data-aos-delay = "100" data-aos-duration = "1000"
+    </script>
 </body>
 </html>
