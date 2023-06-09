@@ -5,13 +5,17 @@
     --background: #ffe187cd;
     --icono:#ec0b0b;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Comme', sans-serif;
     background:var(--background) ;
 }
 ::-webkit-scrollbar{
     display: none;
-}
+} 
 /* ::-webkit-scrollbar-track{
     border: 7px solid var(--background);
     box-shadow: 0 0 5px 5px rgba(255, 125, 25, 0.5) inset; 
@@ -28,9 +32,9 @@ body {
 .container {
     width: 96%;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
-    padding: var(--padding-container);
+    padding: var(--padding-container);  
 }
 /*Seccion del header donde estara el menu con la Felicitaciones*/
 .secciontop {   
@@ -118,6 +122,8 @@ body {
 /*EL POR QUE ES ELLA ESPECIA, ESA SECCION*/
 .about {
     text-align: center;
+    height:auto;
+    width:auto;
 }
 .subtitle {
     color: var(--color-title);
@@ -130,10 +136,8 @@ body {
 .about__main {
     padding-top: 80px;
     display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
-    overflow: hidden;
+    width: 100%;
+    margin: 0 ;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 .about__icons {
@@ -142,7 +146,7 @@ body {
     justify-items: center;
     width: 260px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 ;
 }
 .about__icon {
     width: 40px;
@@ -165,5 +169,62 @@ body {
     height: 100vh;
 }
 .TE-AMO{
+    color: #ec0
+}
+/* SLIDER-----------------------------------PARTE DE FRASES E IMAGENES CON AMIGOS */
+SECCION DE FELICITACIONES --------------------------
+.card-ward{
+    padding: var(--padding-container);
+}
+img{
+    max-width: 100%;
+}
+article.card{
+    max-width: 350px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 0 12px #cfcaca8e;
+}
+.header-card img{
+    border-radius: 8px 8px 0 0; 
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+.categoria-card{
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+.categoria-card .categoria{
+    background: #25c4d8;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+}
+.card footer{
+    padding: 0 1rem;    
+}
+.perfil-card{
+    display: flex;
+    align-items: center;
+}
+.img-perfil-card{
+    display: flex;
+}
+.img-perfil-card img{
+    width: 50px;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+}
+.text-perfil-card{
+    display: flex;
+    flex-flow: column;
+}
+.text-perfil-card span:nth-child(2){
     color: #ec0b0b;
+}
+.card-ward{
+    display: flex;
+    flex-flow: wrap; 
 }
